@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+
+    background: linear-gradient(to right, black, gray, white);
+}
+.navbar button {
+    color: white;
+    border-radius: 20px;
+    background-color: black;
+}
+.home{
+  background-image: url(../img/12.jpeg);
+  width: 100%;
+  background-size: 100% 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.about{
+    background-image: url(../img/11.jpg);
+    background-size: 100% 100%;
+    height: auto;
+    padding: 50px 0px;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.aboutHeader{
+    text-align: center;
+    border-bottom: 2px solid white;
+    width: 30%;
+    margin: auto;
+    padding-bottom: 4px;
+}
+.aboutHeader h1{
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    color: white;
+}
+
+.profile{
+    text-align: center;
+    background-image: linear-gradient(to left, #000 70%, rgb(47, 6, 63));
+    color: white;
+    font-weight: bold;
+    padding: 100px 0px;
+}
+
+.profile .profileHeader{
+    width: 30%;
+    margin: auto;
+}
+.profile .profileHeader h1{
+    position: relative;
+}
+.profile .profileHeader h1::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    background-color: white;
+    height: 5px;
+    right: 0;
+    top: 50%;
+}
+
+.profile .profileHeader h1::before{
+    content: "";
+    position: absolute;
+    width: 20%;
+    background-color: white;
+    height: 5px;
+    left: 0;
+    top: 50%;
+}
+
+i{
+    font-size: 30px;
+    color: red;
+}
+
+
+.product{
+    background-image: url(../img/p3.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: auto;
+    padding: 50px 0px;
+    text-align: center;
+    color: white;  
+}
+.product .productHeader {
+    border-bottom: 2px solid white;
+    border-radius: 20%;
+    margin-top: 30px;
+    width: 30%;
+    margin: auto;
+}
+.product .productHeader h1{
+    font-family: 'Courier New', Courier, monospace;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 20%;
+}
+
+
+.product .card {
+    color: white;
+    margin-top: 50px;
+    background-color: gray;
+}
+
+.card img {
+    height: 400px;
+}
+
+
+.footer{
+    background-color: #26272b;
+}
+
+.footer h1{
+    color: #fff;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.footerHeader a{
+    list-style-type: none;
+    color: gray;
+    text-decoration: none;
+    
+}
+
+
+.footerSubject{
+    background-color: #26272b;
+    padding-top: 25px;
+}
+.footerLast{
+    margin-top: 20px;
+}
+.footerLast h1{
+    color: white;
+    font-size: 17px;
+}
+.link{
+    color: gray;
+}
+.link:hover{
+    color: black;
+    text-decoration: none;
+}
+.FooterEnd{
+    padding: 15px;
+}
+
+
+@media(max-width:600px){
+    .aboutHeader{
+        width: 80%;
+    }
+    .profile .profileHeader {
+        width: 70%;
+    }
+    .profile .profileHeader h1 {
+        font-size: 25px;
+    }
+    .product .productHeader {
+        width: 70%;
+    }
+    .product .productHeader h1 {
+        font-size: 25px;
+    }
+    .footerLast{
+        margin-top: 20px;
+    }
+    .footerLast h1{
+        color: white;
+        font-size: 17px;
+        text-align: center;
+    }
+    .FooterEnd .foot i{
+        text-align: center;
+        font-size: 17px;
+        padding: 15px;
+    }
+    .ProfileData h1{
+        font-size: 25px;
+    }
+    .ProfileData p{
+        font-size: 13px;
+    }
+    .profileInfo h1{
+        text-align: left;
+        font-size: 25px;
+    }
+    .profileInfo p{
+       text-align: left;
+       font-size: 15px;
+    }
+}
